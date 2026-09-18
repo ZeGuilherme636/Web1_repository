@@ -13,7 +13,6 @@ ins {
     color: #415A77;
 }
 
-/* Cada foto + legenda centralizada, como um cartão só */
 figure {
     max-width: 340px;
     margin: 25px auto;

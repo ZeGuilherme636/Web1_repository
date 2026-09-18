@@ -1,0 +1,45 @@
+
+h2 {
+    text-align: center;
+    color: #E0A458;
+}
+
+mark {
+    background-color: #E0A458;
+    color: #1B263B;
+}
+
+ins {
+    color: #415A77;
+}
+
+/* Cada foto + legenda centralizada, como um cartão só */
+figure {
+    max-width: 340px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    border: 3px solid #415A77;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 8px;
+    text-align: left;
+    line-height: 1.5;
+   
+}
+
+.indice-fotos a {
+    background-color: #F5F0E6;
+    border: 1px solid #415A77;
+    color: #415A77;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+

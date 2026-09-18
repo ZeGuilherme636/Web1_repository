@@ -1,0 +1,39 @@
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h3 {
+    border-bottom: 2px solid #E0A458;
+    padding-bottom: 5px;
+    width: 220px;
+    margin: 25px auto 10px auto;
+    text-align: center;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    padding: 0 15px;
+    line-height: 1.6;
+}
+
+figure {
+    max-width: 340px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    border: 3px solid #415A77;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 8px;
+    text-align: left;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}

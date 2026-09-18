@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #F5F0E6;
+    color: #1B263B;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #1B263B;
+    padding: 10px 20px;
+}
+
+
+nav a {
+    color: #F5F0E6;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+/* Efeito hover no menu de navegação */
+nav a:hover {
+    background-color: #E0A458;
+    color: #1B263B;
+}
+
+
+#titulo-principal {
+    text-align: center;
+    color: #415A77;
+    padding: 15px 0;
+}
+
+h2, h3 {
+    color: #415A77;
+}
+
+hr {
+    border: 1px solid #E0A458;
+    margin: 20px 0;
+}
+
+/* botão voltar ao topo */
+.voltar-topo {
+    display: inline-block;
+    background-color: #415A77;
+    color: #F5F0E6;
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Efeito hover no botão voltar ao topo */
+.voltar-topo:hover {
+    background-color: #E0A458;
+    color: #1B263B;
+}
+
+/* Espaçamento das galerias de imagens */
+figure {
+    margin: 20px 30px;
+    padding: 10px;
+}
+
+figcaption {
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+
+a {
+    color: #415A77;
+}
+
+/* Efeito hover para todos os links do conteúdo */
+a:hover {
+    color: #E0A458;
+    text-decoration: underline;
+}

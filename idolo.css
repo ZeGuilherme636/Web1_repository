@@ -28,7 +28,8 @@ figcaption {
     margin-top: 8px;
     text-align: left;
     line-height: 1.5;
-   
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .indice-fotos a {

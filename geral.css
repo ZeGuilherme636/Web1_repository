@@ -1,37 +1,47 @@
-
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #F5F0E6;
     color: #1B263B;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-
+/* MOBILE FIRST: menu vertical por padrão */
 nav {
     background-color: #1B263B;
     padding: 10px 20px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 
+
+
+}
 
 nav a {
     color: #F5F0E6;
     text-decoration: none;
-    margin-right: 15px;
-    padding: 5px 10px;
+    margin: 3px 0;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
 }
 
-/* Efeito hover no menu de navegação */
 nav a:hover {
     background-color: #E0A458;
     color: #1B263B;
+    transition: all 0.3s ease;
 }
-
 
 #titulo-principal {
     text-align: center;
     color: #415A77;
     padding: 15px 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 h2, h3 {
@@ -40,7 +50,12 @@ h2, h3 {
 
 hr {
     border: 1px solid #E0A458;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+p {
+    text-align: center;
 }
 
 /* botão voltar ao topo */
@@ -54,29 +69,95 @@ hr {
     border-radius: 5px;
 }
 
-/* Efeito hover no botão voltar ao topo */
 .voltar-topo:hover {
     background-color: #E0A458;
     color: #1B263B;
 }
 
-/* Espaçamento das galerias de imagens */
 figure {
-    margin: 20px 30px;
+    margin: 20px auto;
     padding: 10px;
+    max-width: 340px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
 }
 
 figcaption {
     padding-top: 5px;
     font-size: 0.9em;
+    text-align: center;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 a {
     color: #415A77;
 }
 
-/* Efeito hover para todos os links do conteúdo */
 a:hover {
     color: #E0A458;
     text-decoration: underline;
+}
+
+/* Layout em colunas: celular = uma coluna */
+.colunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.coluna-texto,
+.coluna-fotos {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.coluna-texto p {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    padding: 0 15px;
+    line-height: 1.6;
+}
+
+.coluna-fotos figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Breakpoint 1: menu horizontal */
+@media (min-width: 750px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+}
+
+/* Breakpoint 2: duas colunas no desktop */
+@media (min-width: 900px) {
+    .colunas {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .coluna-texto,
+    .coluna-fotos {
+        width: 50%;
+        flex-grow: 1;
+        text-align: center;
+    }
 }

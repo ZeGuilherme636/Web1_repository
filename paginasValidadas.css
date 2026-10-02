@@ -1,0 +1,10 @@
+/* As prints têm width="800" no HTML: no celular precisam caber na tela */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #415A77;
+}

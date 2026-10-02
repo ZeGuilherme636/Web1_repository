@@ -1,0 +1,349 @@
+/* Página do infoproduto - Mobile First */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main section {
+    padding: 45px 20px;
+}
+
+.hero-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-texto {
+    max-width: 600px;
+}
+
+.hero-texto h2 {
+    font-size: 2.2em;
+    margin: 10px 0 15px;
+}
+
+.hero-texto p {
+    max-width: 600px;
+}
+
+.destaque {
+    color: #E0A458;
+    font-weight: bold;
+}
+
+.hero-imagem {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    background-color: #D9E2EC;
+    border-radius: 12px;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-imagem p {
+    margin-top: 10px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #415A77;
+    color: #F5F0E6;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #E0A458;
+    color: #1B263B;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #D9E2EC;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.card span {
+    font-size: 38px;
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.recomendacoes {
+    text-align: center;
+}
+
+.intro-recomendacoes {
+    max-width: 800px;
+    margin: 15px auto 30px;
+}
+
+.produtos-pesca {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+.produto-pesca {
+    width: 100%;
+    max-width: 380px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9E2EC;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.produto-pesca img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    padding: 18px;
+    background-color: #F1F4F5;
+}
+
+.produto-iscas img,
+.produto-kit img {
+    height: 360px;
+    padding: 25px;
+}
+
+.produto-pesca h3 {
+    margin: 18px 15px 8px;
+}
+
+.produto-pesca p {
+    padding: 0 18px 22px;
+}
+
+.produto-destaque {
+    border: 2px solid #E0A458;
+}
+
+.sobre {
+    background-color: #D9E2EC;
+    border-radius: 12px;
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: 15px auto 0;
+}
+
+.oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.conteudo {
+    max-width: 550px;
+}
+
+.conteudo ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.conteudo li {
+    margin: 10px 0;
+}
+
+.oferta aside {
+    width: 100%;
+    max-width: 330px;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #E0A458;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.oferta aside p {
+    font-weight: bold;
+}
+
+.antigo {
+    display: block;
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.oferta aside strong {
+    display: block;
+    color: #415A77;
+    font-size: 2.5em;
+}
+
+.oferta aside small {
+    display: block;
+}
+
+.depoimentos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.depoimentos article {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.pergunta {
+    max-width: 800px;
+    margin: 15px auto 0;
+    padding: 18px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pergunta h3 {
+    margin-bottom: 5px;
+}
+
+.cta {
+    background-color: #1B263B;
+    color: #F5F0E6;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    color: #F5F0E6;
+}
+
+.cta .botao {
+    background-color: #F5F0E6;
+    color: #1B263B;
+}
+
+/* Breakpoint 1 */
+@media (min-width: 750px) {
+    .hero-produto {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .hero-texto,
+    .hero-imagem {
+        flex: 1;
+    }
+
+    .hero-imagem {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 40%;
+    }
+
+    .depoimentos-grid {
+        flex-direction: row;
+    }
+
+    .produtos-pesca {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        column-gap: 40px;
+        row-gap: 45px;
+    }
+
+    .produto-pesca {
+        flex: 0 1 350px;
+        max-width: 350px;
+    }
+
+    .produto-iscas img,
+    .produto-kit img {
+        height: 370px;
+    }
+
+    .depoimentos article {
+        flex: 1;
+    }
+}
+
+/* Breakpoint 2 */
+@media (min-width: 900px) {
+    main section {
+        padding: 60px 30px;
+    }
+
+    .hero-texto h2 {
+        font-size: 3em;
+    }
+
+    .oferta {
+        flex-direction: row;
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .conteudo {
+        flex: 2;
+    }
+
+    .oferta aside {
+        flex: 1;
+        text-align: center;
+    }
+
+    .card {
+        flex-basis: 20%;
+    }
+
+    .produto-pesca {
+        flex-basis: 350px;
+    }
+
+    .produto-iscas,
+    .produto-kit {
+        flex-basis: 390px;
+    }
+
+    .produto-iscas img,
+    .produto-kit img {
+        height: 400px;
+    }
+}
